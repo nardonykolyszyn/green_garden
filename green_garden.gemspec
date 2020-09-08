@@ -23,4 +23,9 @@ Gem::Specification.new do |spec|
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
   spec.require_paths = %w[lib]
+
+  ## Dependencies
+
+  # Development
+  spec.add_development_dependency 'pry', '~> 0.13.1'
 end
