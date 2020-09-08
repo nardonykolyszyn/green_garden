@@ -18,8 +18,23 @@ module GreenGarden
         end
       end
 
+      class Tree < Dry::CLI::Command
+        desc "Compare two datasets in (JSON) format"
+
+        argument :dataset_one, required: true, type: :string
+        argument :dataset_two, required: true, type: :string
+
+        examples [
+          "data/chicago.json data/seattle.json"
+        ]
+
+        def call(dataset_one:, dataset_two:)
+        end
+      end
+
       # Register available options
       register "version", Version, aliases: %w[v -v --version]
+      register "diff", Tree
     end
   end
 end
