@@ -30,6 +30,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'pry', '~> 0.13.1'
 
   # Production
+  spec.add_dependency 'colorize', '~> 0.8.1'
   spec.add_dependency 'dry-cli', '~> 0.6.0'
   spec.add_dependency 'oj', '~> 3.10'
 end

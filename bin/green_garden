@@ -4,6 +4,7 @@
 require "bundler/setup"
 require "dry/cli"
 require "green_garden"
+require "colorize"
 
 module GreenGarden
   module CLI
@@ -24,15 +25,23 @@ module GreenGarden
         argument :dataset_one, required: true, type: :string
         argument :dataset_two, required: true, type: :string
 
-        examples [
+        example [
           "data/chicago.json data/seattle.json"
         ]
 
         def call(dataset_one:, dataset_two:)
+          datasets_diff = GreenGarden::Tree.diff_between(dataset_one, dataset_two)
+
+          if datasets_diff.is_a?(String)
+            puts datasets_diff.red
+          else
+            puts (datasets_diff ? "Datasets are equal".green : "Datasets are different".red)
+          end
         end
       end
 
       # Register available options
+
       register "version", Version, aliases: %w[v -v --version]
       register "diff", Tree
     end
@@ -41,4 +50,3 @@ end
 
 # Initialize CLI
 Dry::CLI.new(GreenGarden::CLI::Commands).call
-
