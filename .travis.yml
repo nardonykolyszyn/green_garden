@@ -10,3 +10,4 @@ deploy:
     tags: true
     branch: master
     gem: green_garden
+    gemspec: green_garden.gemspec
