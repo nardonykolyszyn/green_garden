@@ -30,12 +30,12 @@ module GreenGarden
         ]
 
         def call(dataset_one:, dataset_two:)
-          datasets_diff = GreenGarden::Tree.diff_between(dataset_one, dataset_two)
+          begin
+            datasets_diff = GreenGarden::Tree.diff_between(dataset_one, dataset_two)
 
-          if datasets_diff.is_a?(String)
-            puts datasets_diff.red
-          else
             puts (datasets_diff ? "Datasets are equal".green : "Datasets are different".red)
+          rescue GreenGarden::Tree::DatasetNotFound
+            puts "Trees could not be loaded, please check files paths".red
           end
         end
       end

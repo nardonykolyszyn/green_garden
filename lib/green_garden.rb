@@ -11,6 +11,11 @@ module GreenGarden
     extend Loader
     extend Graph
     extend Comparer
+    class DatasetNotFound < StandardError
+      def initialize(msg = 'Dataset could not be loaded, please check file path')
+        super
+      end
+    end
     class << self
       def diff_between(tree_one, tree_two)
         tree_one = load_json(tree_one)
@@ -21,7 +26,7 @@ module GreenGarden
 
         compare_activities(activity_one, activity_two)
       rescue Errno::ENOENT
-        'Trees could not be loaded, please check files paths'
+        raise DatasetNotFound
       end
     end
   end
