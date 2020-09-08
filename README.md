@@ -1,8 +1,27 @@
 # GreenGarden
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/green_garden`. To experiment with that code, run `bin/console` for an interactive prompt.
+*The land of green trees, where the magic happens and everything is possible, welcome to* **Green Garden** 🌳✨
+-------------------------------------
 
-TODO: Delete this and the text above, and describe your gem
+**Why this name?**
+
+These Trees are not regular ones, here is where the magic occurs, and where mysterious creatures called "Bugs" are on the prowl, be careful, and enjoy this new adventure. 🧙
+
+**Purpose**
+
+Green Garden was created with the purpose to teach algorithms by using multidimensional data-structures such as Hashes and Graphs.
+
+**Capabilities**
+
+*Before raising the blessed sword, get up that stick!*
+
+Green Garden allows provides a powerful CLI tool to perform a set of operations with trees, additionally it's a Ruby gem that can be easily installed in your Rails or Ruby application.
+
+- Compare two JSON files
+
+**Coming soon**
+- *[Label large datasets](https://whatis.techtarget.com/definition/data-labeling)*
+- *Order datasets by a variety of options*
 
 ## Installation
 
