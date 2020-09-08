@@ -1,5 +1,7 @@
 # GreenGarden
 
+[![Build Status](https://travis-ci.org/nardonykolyszyn/green_garden.svg?branch=master)](https://travis-ci.org/nardonykolyszyn/green_garden)
+
 *The land of green trees, where the magic happens and everything is possible, welcome to* **Green Garden** 🌳✨
 -------------------------------------
 
