@@ -5,8 +5,7 @@ rvm:
 before_install: gem install bundler -v 2.1.4
 deploy:
   provider: rubygems
-  api_key:
-    secure: iswOyzgUtfqV/3z3r9rkshY3p+O99GK1VnXvfmKMxKbHwL5weIRcuD5fWYxkcucAvcDUmwB2RS22NbSffSTeTnKxOEc+ZWe1NUSGycNs2CxLcvJQDcjsbgrkYdqk2EX9KNH+EKDknuG8HFZgBcftdK01bhpD/aBf5ZyosgmvciD+9zl53pQXneYlOqvB3FmKfwlQGoDNZvrAk9smHdUEsu8ks8OnDHg+7DnfTG5pS7kByq/EBap8canB0/TNtPJ3nB6cQj+C1lkH6WdmnQ2WQt2CutycvJK0+mZ6xz3FrrH14Ag11xgXhZJ8p+1ch+Pc0NHEYWaNNJs0yaroMzM7NI1Sispy+u7Jsgv/5P13EyUc/Qt6DVDev9qG3jt8766qUNwA82AgaTI/wX7NNZk3xgJpFuTftVUux+r0Gaet0sWfbFT8ImEFN9wHRkuKsl+T6vIxRqJ2Vmuxj6ANCt2Y02VK/IZxDMCHKqQBJQY3G++/lDGnjdjYSZv0m/q1OyU7b8Bd9Qthp0jw0G+2B1oWF9AuwWHBQUfR+k89/QT6kvIIHVBcSRBWtd/kBuzVyM2YE6DjiLd0MHrKZ6Yrcp8R5l8mJdam+7Sot8jyVlmQSHudnLJyGHtZ8G4DzCcPOJilqEi+F565Jb+kQImCEcJPPuPPm2WmiDD1hsLgd27xrbo=
+  api_key: "9cecfe4c096bd8443684cc6b09274e57"
   on:
     tags: true
     branch: master
