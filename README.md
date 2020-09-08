@@ -43,7 +43,40 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+  $ green_garden diff data/chicago.json data/seattle.json
+```
+
+> It returns "true" if both datasets are equal and "false" if not.
+
+**Show current version**
+
+```bash
+  $ green_garden --version
+```
+
+**Show help**
+
+```bash
+  $ green_garden --help
+```
+
+## Performance
+
+OJ was implemented to load heavy JSON files, feel free to use any big dataset you have, I guarantee you that there will not be any problem comparing them, recursive approach won't waste memory in unnecesary and repetitive operations.
+
+**Fuzzing**
+
+1. Download this sample dataset (https://github.com/lutangar/cities.json/blob/master/cities.json) [SIZE: 13MB]
+
+2. Run
+
+```bash
+  $ green_garden diff cities.json cities.json
+```
+--------------------------------
+
+![Gif](https://media.giphy.com/media/Pitv6kOoR0XpsUUiJG/giphy.gif)
 
 ## Development
 
