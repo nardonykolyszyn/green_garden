@@ -1,0 +1,29 @@
+# frozen_string_literal: true
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "dry/cli"
+require "green_garden"
+
+module GreenGarden
+  module CLI
+    module Commands
+      extend Dry::CLI::Registry
+
+      class Version < Dry::CLI::Command
+        desc "Show current version"
+
+        def call(*)
+          puts GreenGarden::VERSION
+        end
+      end
+
+      # Register available options
+      register "version", Version, aliases: %w[v -v --version]
+    end
+  end
+end
+
+# Initialize CLI
+Dry::CLI.new(GreenGarden::CLI::Commands).call
+
