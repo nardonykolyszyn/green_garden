@@ -28,4 +28,7 @@ Gem::Specification.new do |spec|
 
   # Development
   spec.add_development_dependency 'pry', '~> 0.13.1'
+
+  # Production
+  spec.add_dependency 'oj', '~> 3.10'
 end
